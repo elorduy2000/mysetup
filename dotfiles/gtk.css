@@ -1,0 +1,18 @@
+# ~/.config/gtk-3.0/gtk.css
+
+wnk-paper {
+	background-color: lightgrey; opacity: 0.6; 
+}
+wnk-paper:selected {
+	background-color: #1793d1; 
+}
+wnk-paper:hover {
+	background-color: white; 
+}
+
+.xfce4-panel {
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+	border-bottom-left-radius: 9px;
+}
