@@ -1,0 +1,37 @@
+-- ~/,conkyrc
+
+conky.config = {
+  alignment = 'top_left',
+  output_to_console = true,
+  out_to_stderr = false,
+  update_interval = 10,
+  double_buffer = yes,
+  own_window = false,
+  gap_x = 15,
+};
+
+conky.text = [[
+# SYSTEM
+${color 006060} ${image ~/Downloads/mysetup/icons/for_conky/linux.png -s 30x30 -p 0,0}
+
+
+${exec fastfetch -l none -S os:kernel:host:shell}
+
+# CPU
+${image ~/Downloads/mysetup/icons/for_conky/cpu.png -s 30x30 -p 0,105}
+
+
+${exec fastfetch -l none -S cpuusage:cpu:mem}
+
+# TEMA
+${image ~/Downloads/mysetup/icons/for_conky/template.png -s 30x30 -p 0,180}
+
+
+${exec fastfetch -l none -S de:theme:wm:wmtheme:icons:cursor:font:display:wallpaper}
+
+# DISK
+${image ~/Downloads/mysetup/icons/for_conky/hard-disk.png -s 30x30 -p 0,340}
+
+
+${exec fastfetch -l none -S disk}
+]]
